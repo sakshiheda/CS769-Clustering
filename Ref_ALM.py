@@ -481,8 +481,8 @@ if __name__ == "__main__":
     eqParameters = [(1.7, 0.6, -3.4)]
     conParaDict = {'ineq':ineqParameters, 'eq':eqParameters}
     # evaluate the function as well as the constraint functions at the initial point
-    fval0 = testObjFun(x0, funParameters)
-    ineqVals, eqVals = testConFun(x0, conParaDict)
+    fval0 = testObjFun(x0, funParameters)                   #The parameters are passed to construct the objective function to be minimized.
+    ineqVals, eqVals = testConFun(x0, conParaDict)          # For constraints
     print("f(x[0]) = %s"%fval0)
     for ineqIndex in range(len(ineqVals)):
         print("g%i(x[0]) = %s >= 0"%(ineqIndex, ineqVals[ineqIndex]))
