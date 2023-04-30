@@ -156,7 +156,7 @@ if __name__=="__main__":
     #           [1, 0, 1, 0]])
     
     
-    n = 8
+    n = 5
     A = np.random.randint(2, size=(n, n))
     print(A)
     print(np.linalg.matrix_rank(A))
